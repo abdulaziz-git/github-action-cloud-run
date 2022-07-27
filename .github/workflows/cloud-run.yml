@@ -67,10 +67,10 @@ jobs:
     - name: Deploy to Cloud Run
       id: gacloudrun-aziz
       uses: google-github-actions/deploy-cloudrun@v0.4.0
-        with:
-            service: ${{ env.SERVICE }}
-            image: gcr.io/${{ env.PROJECT_ID }}/${{ env.SERVICE }}:${{  github.sha }}
-            region: ${{ env.REGION }}
+      with:
+          service: ${{ env.SERVICE }}
+          image: gcr.io/${{ env.PROJECT_ID }}/${{ env.SERVICE }}:${{  github.sha }}
+          region: ${{ env.REGION }}
 
     - name: Show Output
       run: echo ${{ steps.gacloudrun-aziz.outputs.url }}
