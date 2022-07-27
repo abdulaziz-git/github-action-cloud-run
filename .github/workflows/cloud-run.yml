@@ -6,7 +6,7 @@ on:
       - main
 
 env:
-  PROJECT_ID: ${{ secrets.GCP_PROJECT }} # TODO: update Google Cloud project id
+  PROJECT_ID: trial-project-andania # TODO: update Google Cloud project id
   # GAR_LOCATION: YOUR_GAR_LOCATION # TODO: update Artifact Registry location
   SERVICE: helloworld-nodejs # TODO: update Cloud Run service name
   REGION: us-central1 # TODO: update Cloud Run service region
