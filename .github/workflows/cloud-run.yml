@@ -12,6 +12,9 @@ env:
   REGION: us-central1 # TODO: update Cloud Run service region
 
 jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    
   job_id:
     permissions:
       contents: 'read'
