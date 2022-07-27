@@ -13,12 +13,11 @@ env:
 
 jobs:
   deploy:
-    runs-on: ubuntu-latest
-    
-  job_id:
     permissions:
       contents: 'read'
       id-token: 'write'
+    
+    runs-on: ubuntu-latest
 
     steps:
     - id: 'auth'
