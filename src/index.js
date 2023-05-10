@@ -7,6 +7,6 @@ app.listen(8888, () => {
 
 app.get("/", (req, res) => {
   res.send(
-    `This is simple nodejs website`
+    `This is simple nodejs website with CI/CD using GCP`
   );
 });
