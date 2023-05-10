@@ -1,8 +1,12 @@
-const http = require("http");
-function requestHandler(req, res) {
-  res.write("ok");
-  res.end();
-}
-const server = http.createServer(requestHandler);
-const port = process.env.PORT || 8888;
-server.listen(port, () => console.log(`listening on port ${port}`));
+const express = require("express");
+const app = express();
+
+app.listen(8888, () => {
+  console.log("Application started and Listening on port 8888");
+});
+
+app.get("/", (req, res) => {
+  res.send(
+    `This is simple nodejs website`
+  );
+});
