@@ -7,6 +7,6 @@ app.listen(8888, () => {
 
 app.get("/", (req, res) => {
   res.send(
-    `Hello world from GCP CI/CD with cloud run`
+    `Hello world`
   );
 });
