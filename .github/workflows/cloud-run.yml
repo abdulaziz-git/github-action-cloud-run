@@ -7,7 +7,7 @@ on:
 
 env:
   PROJECT_ID: trial-project-andania # TODO: update Google Cloud project id
-  SERVICE: hello-nodejs # TODO: update Cloud Run service name
+  SERVICE: hello-nodejss # TODO: update Cloud Run service name
   REGION: us-central1 # TODO: update Cloud Run service region
 
 jobs:
